@@ -28,7 +28,7 @@ namespace ezEvade
 
             //Game.OnUpdate += Game_OnGameUpdate;
 
-            evadeSpellMenu = new Menu("Evade Spells", "EvadeSpells");
+            evadeSpellMenu = new Menu("Né Kĩ Năng", "EvadeSpells");
             menu.AddSubMenu(evadeSpellMenu);
 
             LoadEvadeSpellList();
@@ -81,17 +81,17 @@ namespace ezEvade
             }
 
             Menu newSpellMenu = new Menu(menuName, spell.charName + spell.name + "EvadeSpellSettings");
-            newSpellMenu.AddItem(new MenuItem(spell.name + "UseEvadeSpell", "Use Spell").SetValue(true));
+            newSpellMenu.AddItem(new MenuItem(spell.name + "UseEvadeSpell", "Dùng kĩ năng").SetValue(true));
 
-            newSpellMenu.AddItem(new MenuItem(spell.name + "EvadeSpellDangerLevel", "Danger Level")
-                .SetValue(new StringList(new[] { "Low", "Normal", "High", "Extreme" }, spell.dangerlevel - 1)));
+            newSpellMenu.AddItem(new MenuItem(spell.name + "EvadeSpellDangerLevel", "Mức độ Nguy Hiểm")
+                .SetValue(new StringList(new[] { "Thấp", "Thường", "Cao", "Kinh Khủng" }, spell.dangerlevel - 1)));
             //newSpellMenu.AddItem(new MenuItem(spell.name + "SpellActivationTime", "Spell Activation Time").SetValue(new Slider(0, 0, 1000)));
 
             //Menu newSpellMiscMenu = new Menu("Misc Settings", spell.charName + spell.name + "EvadeSpellMiscSettings");
             //newSpellMenu.AddSubMenu(newSpellMiscMenu);
 
-            newSpellMenu.AddItem(new MenuItem(spell.name + "EvadeSpellMode", "Spell Mode")
-                .SetValue(new StringList(new[] { "Undodgeable", "Activation Time", "Always" },
+            newSpellMenu.AddItem(new MenuItem(spell.name + "EvadeSpellMode", "Chế độ né kĩ năng")
+                .SetValue(new StringList(new[] { "Không thể né thường", "Thời gian kích hoạt", "Luôn luôn" },
                     GetDefaultSpellMode(spell))));
 
             evadeSpellMenu.AddSubMenu(newSpellMenu);
@@ -412,13 +412,13 @@ namespace ezEvade
 
             switch (dangerStr)
             {
-                case "Low":
+                case "Thấp":
                     dangerlevel = 1;
                     break;
-                case "High":
+                case "Cao":
                     dangerlevel = 3;
                     break;
-                case "Extreme":
+                case "Kinh Khủng":
                     dangerlevel = 4;
                     break;
                 default:
