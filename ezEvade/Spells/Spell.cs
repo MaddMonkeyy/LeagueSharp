@@ -71,13 +71,13 @@ namespace ezEvade
 
             switch (dangerStr)
             {
-                case "Low":
+                case "Thấp":
                     dangerlevel = 1;
                     break;
-                case "High":
+                case "Cao":
                     dangerlevel = 3;
                     break;
-                case "Extreme":
+                case "Kinh Khủng":
                     dangerlevel = 4;
                     break;
                 default:
@@ -93,13 +93,13 @@ namespace ezEvade
             switch (spell.GetSpellDangerLevel())
             {
                 case 1:
-                    return "Low";
+                    return "Thấp";
                 case 3:
-                    return "High";
+                    return "Cao";
                 case 4:
-                    return "Extreme";
+                    return "Kinh Khủng";
                 default:
-                    return "Normal";
+                    return "Thường";
             }
         }
 
