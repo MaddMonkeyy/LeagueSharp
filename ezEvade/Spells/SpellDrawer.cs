@@ -30,26 +30,26 @@ namespace ezEvade
         {
             //Console.WriteLine("SpellDrawer loaded");
 
-            Menu drawMenu = new Menu("Hiển Thị", "Draw");
-            drawMenu.AddItem(new MenuItem("DrawSkillShots", "Vẽ skill định hướng").SetValue(true));
-            drawMenu.AddItem(new MenuItem("ShowStatus", "Hiện trạng thái Evade").SetValue(true));
-            drawMenu.AddItem(new MenuItem("DrawSpellPos", "Vẽ địa điểm skill").SetValue(false));
-            drawMenu.AddItem(new MenuItem("DrawEvadePosition", "Vẽ địa điểm né").SetValue(false));
+            Menu drawMenu = new Menu("Draw", "Draw");
+            drawMenu.AddItem(new MenuItem("DrawSkillShots", "Draw SkillShots").SetValue(true));
+            drawMenu.AddItem(new MenuItem("ShowStatus", "Show Evade Status").SetValue(true));
+            drawMenu.AddItem(new MenuItem("DrawSpellPos", "Draw Spell Position").SetValue(false));
+            drawMenu.AddItem(new MenuItem("DrawEvadePosition", "Draw Evade Position").SetValue(false));
 
-            Menu dangerMenu = new Menu("Hiển thị mức độ Nguy Hiểm", "DangerLevelDrawings");
-            Menu lowDangerMenu = new Menu("Thấp", "LowDrawing");
+            Menu dangerMenu = new Menu("DangerLevel Drawings", "DangerLevelDrawings");
+            Menu lowDangerMenu = new Menu("Low", "LowDrawing");
             lowDangerMenu.AddItem(new MenuItem("LowWidth", "Line Width").SetValue(new Slider(3, 1, 15)));
             lowDangerMenu.AddItem(new MenuItem("LowColor", "Color").SetValue(new Circle(true, Color.FromArgb(60, 255, 255, 255))));
 
-            Menu normalDangerMenu = new Menu("Thường", "NormalDrawing");
+            Menu normalDangerMenu = new Menu("Normal", "NormalDrawing");
             normalDangerMenu.AddItem(new MenuItem("NormalWidth", "Line Width").SetValue(new Slider(3, 1, 15)));
             normalDangerMenu.AddItem(new MenuItem("NormalColor", "Color").SetValue(new Circle(true, Color.FromArgb(140, 255, 255, 255))));
 
-            Menu highDangerMenu = new Menu("Cao", "HighDrawing");
+            Menu highDangerMenu = new Menu("High", "HighDrawing");
             highDangerMenu.AddItem(new MenuItem("HighWidth", "Line Width").SetValue(new Slider(4, 1, 15)));
             highDangerMenu.AddItem(new MenuItem("HighColor", "Color").SetValue(new Circle(true, Color.FromArgb(255, 255, 255, 255))));
 
-            Menu extremeDangerMenu = new Menu("Kinh Khủng", "ExtremeDrawing");
+            Menu extremeDangerMenu = new Menu("Extreme", "ExtremeDrawing");
             extremeDangerMenu.AddItem(new MenuItem("ExtremeWidth", "Line Width").SetValue(new Slider(4, 1, 15)));
             extremeDangerMenu.AddItem(new MenuItem("ExtremeColor", "Color").SetValue(new Circle(true, Color.FromArgb(255, 255, 255, 255))));
 
