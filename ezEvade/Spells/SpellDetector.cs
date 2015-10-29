@@ -784,12 +784,12 @@ namespace ezEvade
             var enableSpell = !spell.defaultOff;
 
             Menu newSpellMenu = new Menu(menuName, spell.charName + spell.spellName + "Settings");
-            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DodgeSpell", "Né skill").SetValue(enableSpell));
-            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DrawSpell", "Vẽ skill").SetValue(enableSpell));
-            newSpellMenu.AddItem(new MenuItem(spell.spellName + "SpellRadius", "Tầm skill")
+            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DodgeSpell", "Dodge Spell").SetValue(enableSpell));
+            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DrawSpell", "Draw Spell").SetValue(enableSpell));
+            newSpellMenu.AddItem(new MenuItem(spell.spellName + "SpellRadius", "Spell Radius")
                 .SetValue(new Slider((int)spell.radius, (int)spell.radius - 100, (int)spell.radius + 100)));
-            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DangerLevel", "Độ nguy hiểm")
-                .SetValue(new StringList(new[] { "Thấp", "Thường", "Cao", "Kinh Khủng" }, spell.dangerlevel - 1)));
+            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DangerLevel", "Danger Level")
+                .SetValue(new StringList(new[] { "Low", "Normal", "High", "Extreme" }, spell.dangerlevel - 1)));
 
             spellMenu.AddSubMenu(newSpellMenu);
 
@@ -917,12 +917,12 @@ namespace ezEvade
                             var enableSpell = !spell.defaultOff;
 
                             Menu newSpellMenu = new Menu(menuName, spell.charName + spell.spellName + "Settings");
-                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DodgeSpell", "Né skill").SetValue(enableSpell));
-                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DrawSpell", "Vẽ skill").SetValue(enableSpell));
-                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "SpellRadius", "Tầm skill")
+                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DodgeSpell", "Dodge Spell").SetValue(enableSpell));
+                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DrawSpell", "Draw Spell").SetValue(enableSpell));
+                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "SpellRadius", "Spell Radius")
                                 .SetValue(new Slider((int)spell.radius, (int)spell.radius - 100, (int)spell.radius + 100)));
-                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DangerLevel", "Độ nguy hiểm")
-                                .SetValue(new StringList(new[] { "Thấp", "Thường", "Cao", "Kinh Khủng" }, spell.dangerlevel - 1)));
+                            newSpellMenu.AddItem(new MenuItem(spell.spellName + "DangerLevel", "Danger Level")
+                                .SetValue(new StringList(new[] { "Low", "Normal", "High", "Extreme" }, spell.dangerlevel - 1)));
 
                             spellMenu.AddSubMenu(newSpellMenu);
                         }
