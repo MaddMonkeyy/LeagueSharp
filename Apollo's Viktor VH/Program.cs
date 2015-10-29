@@ -56,21 +56,21 @@ namespace Viktor
             Menu.SubMenu("Chiến!!").AddItem(new MenuItem("PredEC", "Độ chính xác E").SetValue(new StringList((new[] { "Thấp", "Vừa", "Cao", "Rất Cao" }), 2)));
             Menu.SubMenu("Chiến!!").AddItem(new MenuItem("HitRC", "Dùng R khi có số địch:").SetValue(new Slider(3, 1, 5)));
             Menu.SubMenu("Chiến!!").AddItem(new MenuItem("UseIgniteC", "Dùng Thiêu Đốt").SetValue(true));
-            Menu.SubMenu("Chiến!!").AddItem(new MenuItem("KeyC", "Nut Combo (" + Utils.KeyToText(Menu.Item("Orbwalk").GetValue<KeyBind>().Key) + ")", true)).DontSave();
+            Menu.SubMenu("Chiến!!").AddItem(new MenuItem("KeyC", "Nút Combo (" + Utils.KeyToText(Menu.Item("Orbwalk").GetValue<KeyBind>().Key) + ")", true)).DontSave();
 
             Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("UseQH", "Dùng Q").SetValue(true));
             Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("UseEH", "Dùng E").SetValue(true));
             Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("kek", ""));
             Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("PredEH", "Độ chính xác E").SetValue(new StringList((new[] { "Thấp", "Vừa", "Cao", "Rất Cao" }), 3)));
             Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("ManaH", "Giới hạn Mana%").SetValue(new Slider(30)));
-            Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("KeyH", "Nut Cau Ria (" + Utils.KeyToText(Menu.Item("Farm").GetValue<KeyBind>().Key) + ")", true)).DontSave();
+            Menu.SubMenu("Cấu rỉa").AddItem(new MenuItem("KeyH", "Nút Cấu Rỉa (" + Utils.KeyToText(Menu.Item("Farm").GetValue<KeyBind>().Key) + ")", true)).DontSave();
 
             Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("UseQL", "Dùng Q").SetValue(true));
             Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("UseEL", "Dùng E").SetValue(true));
             Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("kek", ""));
             Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("HitEL", "Lính tối thiểu dùng E").SetValue(new Slider(3, 1, 10)));
             Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("ManaL", "Giới hạn Mana%").SetValue(new Slider(30)));
-            Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("KeyL", "Nut Don Linh (" + Utils.KeyToText(Menu.Item("LaneClear").GetValue<KeyBind>().Key) + ")", true)).DontSave();
+            Menu.SubMenu("Dọn Lính").AddItem(new MenuItem("KeyL", "Nút Dọn Lính (" + Utils.KeyToText(Menu.Item("LaneClear").GetValue<KeyBind>().Key) + ")", true)).DontSave();
 
             Menu.SubMenu("Cài đặt nâng cao").AddItem(new MenuItem("UseQinAA", "Chỉ Q khi đang trong tầm đánh thường").SetValue(false));
             Menu.SubMenu("Cài đặt nâng cao").AddItem(new MenuItem("AutoW", "Tự động dùng W").SetValue(true));
