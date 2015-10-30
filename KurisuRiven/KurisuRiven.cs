@@ -433,7 +433,7 @@ namespace KurisuRiven
             var qmenu = new Menu("Cài đặt Q", "rivenq");
             var advance = new Menu("Cài đặt Q nâng cao", "advance");
             advance.AddItem(new MenuItem("qcancel", "Hướng Cancel: "))
-                .SetValue(new StringList(new[] {"TựĐộng", "PhíaSau", "KẻĐịch", "ConTrỏ"}, 0));
+                .SetValue(new StringList(new[] {"Tự Động", "Phía Sau", "Kẻ Địch", "Con Trỏ"}, 0));
             advance.AddItem(new MenuItem("autoaq", "Thời gian trì hoãn Q (ms)")).SetValue(new Slider(15, -150, 300));
             advance.AddItem(new MenuItem("qqc", "Chạy thử ở chế độ Tùy Chọn với Cua Kì Cục")).SetFontStyle(FontStyle.Regular, SharpDX.Color.Gold);
             advance.AddItem(new MenuItem("qqa", "Thấp hơn = Q nhanh hơn nhưng có thể dẫn đến nhiều AA bị hủy"));
@@ -472,7 +472,7 @@ namespace KurisuRiven
             rmenu.AddItem(new MenuItem("ultwhen", "Dùng R1 khi")).SetValue(new StringList(new[] {"Giết Thường", "Khó Giết", "Luôn luôn"}, 2));
             rmenu.AddItem(new MenuItem("usews", "Dùng R2 trong Combo")).SetValue(true);
             rmenu.AddItem(new MenuItem("overaa", "Không R2 nếu kẻ địch có thể chết bằng số AA")).SetValue(new Slider(2, 1, 6));
-            rmenu.AddItem(new MenuItem("wsmode", "Dùng R2 khi")).SetValue(new StringList(new[] {"Kill Only", "Kill Or MaxDamage"}, 1));
+            rmenu.AddItem(new MenuItem("wsmode", "Dùng R2 khi")).SetValue(new StringList(new[] {"Chỉ khi Giết", "Giết hoặc tối đa sát thương"}, 1));
             rmenu.AddItem(new MenuItem("multib", "Dồn sát thương kiểu TheShy khi")).SetValue(new StringList(new[] { "Có thể dồn kẻ địch", "Luôn luôn", "Không tốc biến" }, 1));
 
             combo.AddSubMenu(rmenu);
