@@ -223,7 +223,7 @@ namespace RandomUlt.Helpers
                 if (possibleTargets.Any() && player.IsHPBarRendered)
                 {
                     Drawing.DrawText(
-                        player.HPBarPosition.X + 8, player.HPBarPosition.Y - 30, Color.Red, "Có thằng sắp chết em ơi!!!");
+                        player.HPBarPosition.X + 8, player.HPBarPosition.Y - 30, Color.Red, "Co thang IT MAU :))");
                 }
             }
         }
