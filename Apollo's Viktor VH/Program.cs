@@ -43,7 +43,7 @@ namespace Viktor
             #endregion
 
             #region Menu
-            Menu = new Menu("Apollo's Viktor", "Viktor", true);
+            Menu = new Menu("Apollo's Viktor VH", "Viktor", true);
 
             TargetSelector.AddToMenu(Menu.SubMenu("Chọn Mục Tiêu"));
             Orbwalker = new Orbwalking.Orbwalker(Menu.AddSubMenu(new Menu("Thả Diều", "Orbwalking")));
